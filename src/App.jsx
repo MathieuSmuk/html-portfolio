@@ -1,122 +1,125 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
-import './App.css'
-
 function App() {
-  const [count, setCount] = useState(0)
+  const currentYear = new Date().getFullYear();
 
   return (
     <>
-      <section id="center">
-        <div className="hero">
-          <img src={heroImg} className="base" width="170" height="179" alt="" />
-          <img src={reactLogo} className="framework" alt="React logo" />
-          <img src={viteLogo} className="vite" alt="Vite logo" />
-        </div>
-        <div>
-          <h1>Get started</h1>
-          <p>
-            Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
-          </p>
-        </div>
-        <button
-          type="button"
-          className="counter"
-          onClick={() => setCount((count) => count + 1)}
-        >
-          Count is {count}
-        </button>
-      </section>
+      <a className="skip-link" href="#main-content">
+        Skip to main content
+      </a>
 
-      <div className="ticks"></div>
+      <header className="site-header">
+        <nav className="navbar container" aria-label="Main navigation">
+          <a className="brand" href="#home" aria-label="Mathieu Smuk home">
+            MS
+          </a>
 
-      <section id="next-steps">
-        <div id="docs">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#documentation-icon"></use>
-          </svg>
-          <h2>Documentation</h2>
-          <p>Your questions, answered</p>
-          <ul>
+          <ul className="nav-links">
             <li>
-              <a href="https://vite.dev/" target="_blank">
-                <img className="logo" src={viteLogo} alt="" />
-                Explore Vite
-              </a>
+              <a href="#about">About</a>
             </li>
             <li>
-              <a href="https://react.dev/" target="_blank">
-                <img className="button-icon" src={reactLogo} alt="" />
-                Learn more
-              </a>
+              <a href="#projects">Projects</a>
+            </li>
+            <li>
+              <a href="#skills">Skills</a>
+            </li>
+            <li>
+              <a href="#experience">Experience</a>
+            </li>
+            <li>
+              <a href="#contact">Contact</a>
             </li>
           </ul>
-        </div>
-        <div id="social">
-          <svg className="icon" role="presentation" aria-hidden="true">
-            <use href="/icons.svg#social-icon"></use>
-          </svg>
-          <h2>Connect with us</h2>
-          <p>Join the Vite community</p>
-          <ul>
-            <li>
-              <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#github-icon"></use>
-                </svg>
-                GitHub
-              </a>
-            </li>
-            <li>
-              <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#discord-icon"></use>
-                </svg>
-                Discord
-              </a>
-            </li>
-            <li>
-              <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#x-icon"></use>
-                </svg>
-                X.com
-              </a>
-            </li>
-            <li>
-              <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
-                  <use href="/icons.svg#bluesky-icon"></use>
-                </svg>
-                Bluesky
-              </a>
-            </li>
-          </ul>
-        </div>
-      </section>
+        </nav>
+      </header>
 
-      <div className="ticks"></div>
-      <section id="spacer"></section>
+      <main id="main-content">
+        <section className="hero section" id="home">
+          <div className="container">
+            <p className="eyebrow">Hello, my name is</p>
+
+            <h1>Mathieu Smuk</h1>
+
+            <p className="hero-title">Junior Full-Stack Developer</p>
+
+            <p className="hero-description">
+              I build responsive web applications with React, Node.js, Express,
+              and PostgreSQL. My background education in business administration
+              helps me connect technical solutions with practical business
+              needs.
+            </p>
+
+            <div className="hero-actions">
+              <a className="button button-primary" href="#projects">
+                View my projects
+              </a>
+
+              <a className="button button-secondary" href="#contact">
+                Contact me
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section className="section section-muted" id="about">
+          <div className="container">
+            <p className="section-label">About</p>
+            <h2>Building useful software with purpose</h2>
+            <p className="section-placeholder">
+              My professional background and development story will appear here.
+            </p>
+          </div>
+        </section>
+
+        <section className="section" id="projects">
+          <div className="container">
+            <p className="section-label">Selected work</p>
+            <h2>Featured projects</h2>
+            <p className="section-placeholder">
+              Project case studies and live application links will appear here.
+            </p>
+          </div>
+        </section>
+
+        <section className="section section-muted" id="skills">
+          <div className="container">
+            <p className="section-label">Capabilities</p>
+            <h2>Technical skills</h2>
+            <p className="section-placeholder">
+              My frontend, backend, database, and development tools will appear
+              here.
+            </p>
+          </div>
+        </section>
+
+        <section className="section" id="experience">
+          <div className="container">
+            <p className="section-label">Background</p>
+            <h2>Experience and education</h2>
+            <p className="section-placeholder">
+              Relevant experience and education will appear here.
+            </p>
+          </div>
+        </section>
+
+        <section className="section section-muted" id="contact">
+          <div className="container">
+            <p className="section-label">Get in touch</p>
+            <h2>Let&apos;s work together</h2>
+            <p className="section-placeholder">
+              My professional contact links will appear here.
+            </p>
+          </div>
+        </section>
+      </main>
+
+      <footer className="site-footer">
+        <div className="container">
+          <p>© {currentYear} Mathieu Smuk. Built with React and Vite.</p>
+        </div>
+      </footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
