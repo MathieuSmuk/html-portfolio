@@ -1,5 +1,6 @@
 import Footer from "./components/Footer.jsx";
 import Navbar from "./components/Navbar.jsx";
+import About from "./sections/About.jsx";
 import Hero from "./sections/Hero.jsx";
 
 function App() {
@@ -14,15 +15,7 @@ function App() {
       <main id="main-content">
         <Hero />
 
-        <section className="section section-muted" id="about">
-          <div className="container">
-            <p className="section-label">About</p>
-            <h2>Building useful software with purpose</h2>
-            <p className="section-placeholder">
-              My professional background and development story will appear here.
-            </p>
-          </div>
-        </section>
+        <About />
 
         <section className="section" id="projects">
           <div className="container">
