@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar.jsx";
 import About from "./sections/About.jsx";
 import Hero from "./sections/Hero.jsx";
 import Projects from "./sections/Projects.jsx";
+import Skills from "./sections/Skills.jsx";
 
 function App() {
   return (
@@ -20,16 +21,7 @@ function App() {
 
         <Projects />
 
-        <section className="section section-muted" id="skills">
-          <div className="container">
-            <p className="section-label">Capabilities</p>
-            <h2>Technical skills</h2>
-            <p className="section-placeholder">
-              My frontend, backend, database, and development tools will appear
-              here.
-            </p>
-          </div>
-        </section>
+        <Skills />
 
         <section className="section" id="experience">
           <div className="container">
