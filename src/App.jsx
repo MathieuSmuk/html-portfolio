@@ -2,6 +2,7 @@ import Footer from "./components/Footer.jsx";
 import Navbar from "./components/Navbar.jsx";
 import About from "./sections/About.jsx";
 import Hero from "./sections/Hero.jsx";
+import Projects from "./sections/Projects.jsx";
 
 function App() {
   return (
@@ -17,15 +18,7 @@ function App() {
 
         <About />
 
-        <section className="section" id="projects">
-          <div className="container">
-            <p className="section-label">Selected work</p>
-            <h2>Featured projects</h2>
-            <p className="section-placeholder">
-              Project case studies and live application links will appear here.
-            </p>
-          </div>
-        </section>
+        <Projects />
 
         <section className="section section-muted" id="skills">
           <div className="container">
