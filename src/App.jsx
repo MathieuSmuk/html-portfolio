@@ -1,6 +1,7 @@
 import Footer from "./components/Footer.jsx";
 import Navbar from "./components/Navbar.jsx";
 import About from "./sections/About.jsx";
+import ExperienceEducation from "./sections/ExperienceEducation.jsx";
 import Hero from "./sections/Hero.jsx";
 import Projects from "./sections/Projects.jsx";
 import Skills from "./sections/Skills.jsx";
@@ -23,15 +24,7 @@ function App() {
 
         <Skills />
 
-        <section className="section" id="experience">
-          <div className="container">
-            <p className="section-label">Background</p>
-            <h2>Experience and education</h2>
-            <p className="section-placeholder">
-              Relevant experience and education will appear here.
-            </p>
-          </div>
-        </section>
+        <ExperienceEducation />
 
         <section className="section section-muted" id="contact">
           <div className="container">
