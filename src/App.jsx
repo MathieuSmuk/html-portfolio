@@ -1,3 +1,4 @@
+import Contact from "./sections/Contact.jsx";
 import Footer from "./components/Footer.jsx";
 import Navbar from "./components/Navbar.jsx";
 import About from "./sections/About.jsx";
@@ -26,15 +27,7 @@ function App() {
 
         <ExperienceEducation />
 
-        <section className="section section-muted" id="contact">
-          <div className="container">
-            <p className="section-label">Get in touch</p>
-            <h2>Let&apos;s work together</h2>
-            <p className="section-placeholder">
-              My professional contact links will appear here.
-            </p>
-          </div>
-        </section>
+        <Contact />
       </main>
 
       <Footer />

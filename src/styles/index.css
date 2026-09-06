@@ -669,6 +669,115 @@ h2 {
   content: "•";
 }
 
+.contact-section {
+  min-height: auto;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.2fr);
+  gap: clamp(3rem, 8vw, 7rem);
+  align-items: start;
+}
+
+.contact-heading {
+  position: sticky;
+  top: 8rem;
+}
+
+.contact-heading h2 {
+  max-width: 11ch;
+}
+
+.contact-content {
+  min-width: 0;
+}
+
+.contact-introduction {
+  max-width: 58ch;
+  margin-bottom: 2rem;
+  color: var(--color-text);
+  font-size: 1.2rem;
+}
+
+.contact-details {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 0 0 2.5rem;
+}
+
+.contact-details div {
+  padding: 1.25rem;
+  background: var(--color-surface-light);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius);
+}
+
+.contact-details dt {
+  margin-bottom: 0.35rem;
+  color: var(--color-accent);
+  font-size: 0.75rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.contact-details dd {
+  margin: 0;
+  color: var(--color-text);
+  font-weight: 700;
+}
+
+.contact-link-list {
+  display: grid;
+  border-top: 1px solid var(--color-border);
+}
+
+.contact-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  padding-block: 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+  text-decoration: none;
+  transition:
+    color var(--transition),
+    padding-inline var(--transition);
+}
+
+.contact-link:hover {
+  padding-inline: 0.75rem;
+  color: var(--color-accent);
+}
+
+.contact-link-text {
+  display: grid;
+  gap: 0.25rem;
+}
+
+.contact-link-label {
+  color: var(--color-text);
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.contact-link-value {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+}
+
+.contact-link-arrow {
+  color: var(--color-accent);
+  font-size: 1.5rem;
+  transition: transform var(--transition);
+}
+
+.contact-link:hover .contact-link-arrow {
+  transform: translate(0.2rem, -0.2rem);
+}
+
 .site-footer {
   padding-block: 2rem;
   color: var(--color-text-muted);
@@ -754,6 +863,19 @@ h2 {
     grid-template-columns: 1fr;
     gap: 3rem;
   }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .contact-heading {
+    position: static;
+  }
+
+  .contact-heading h2 {
+    max-width: 16ch;
+  }
 }
 
 @media (max-width: 480px) {
@@ -777,6 +899,14 @@ h2 {
   .career-entry {
     grid-template-columns: 1fr;
     gap: 0.75rem;
+  }
+
+  .contact-details {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-link {
+    gap: 1rem;
   }
 }
 
