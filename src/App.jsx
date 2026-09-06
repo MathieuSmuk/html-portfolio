@@ -1,65 +1,18 @@
-function App() {
-  const currentYear = new Date().getFullYear();
+import Footer from "./components/Footer.jsx";
+import Navbar from "./components/Navbar.jsx";
+import Hero from "./sections/Hero.jsx";
 
+function App() {
   return (
     <>
       <a className="skip-link" href="#main-content">
         Skip to main content
       </a>
 
-      <header className="site-header">
-        <nav className="navbar container" aria-label="Main navigation">
-          <a className="brand" href="#home" aria-label="Mathieu Smuk home">
-            MS
-          </a>
-
-          <ul className="nav-links">
-            <li>
-              <a href="#about">About</a>
-            </li>
-            <li>
-              <a href="#projects">Projects</a>
-            </li>
-            <li>
-              <a href="#skills">Skills</a>
-            </li>
-            <li>
-              <a href="#experience">Experience</a>
-            </li>
-            <li>
-              <a href="#contact">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </header>
+      <Navbar />
 
       <main id="main-content">
-        <section className="hero section" id="home">
-          <div className="container">
-            <p className="eyebrow">Hello, my name is</p>
-
-            <h1>Mathieu Smuk</h1>
-
-            <p className="hero-title">Junior Full-Stack Developer</p>
-
-            <p className="hero-description">
-              I build responsive web applications with React, Node.js, Express,
-              and PostgreSQL. My background education in business administration
-              helps me connect technical solutions with practical business
-              needs.
-            </p>
-
-            <div className="hero-actions">
-              <a className="button button-primary" href="#projects">
-                View my projects
-              </a>
-
-              <a className="button button-secondary" href="#contact">
-                Contact me
-              </a>
-            </div>
-          </div>
-        </section>
+        <Hero />
 
         <section className="section section-muted" id="about">
           <div className="container">
@@ -113,11 +66,7 @@ function App() {
         </section>
       </main>
 
-      <footer className="site-footer">
-        <div className="container">
-          <p>© {currentYear} Mathieu Smuk. Built with React and Vite.</p>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }
