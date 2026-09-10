@@ -2,6 +2,10 @@ function ProjectCard({ project, position }) {
   const {
     title,
     category,
+    image,
+    imageAlt,
+    imageWidth,
+    imageHeight,
     description,
     highlights,
     technologies,
@@ -13,6 +17,16 @@ function ProjectCard({ project, position }) {
 
   return (
     <article className="project-card">
+      <div className="project-card-media">
+        <img
+          src={image}
+          alt={imageAlt}
+          width={imageWidth}
+          height={imageHeight}
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
       <div className="project-card-header">
         <p className="project-number" aria-hidden="true">
           {projectNumber}
