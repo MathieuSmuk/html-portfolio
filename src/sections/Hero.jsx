@@ -1,3 +1,5 @@
+import { resumeUrl } from "../config/site.js";
+
 function Hero() {
   return (
     <section className="hero section" id="home">
@@ -17,6 +19,14 @@ function Hero() {
         <div className="hero-actions">
           <a className="button button-primary" href="#projects">
             View my projects
+          </a>
+
+          <a
+            className="button button-secondary"
+            href={resumeUrl}
+            download="Mathieu-Smuk-Resume.pdf"
+          >
+            Download résumé
           </a>
 
           <a className="button button-secondary" href="#contact">

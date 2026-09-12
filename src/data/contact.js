@@ -1,3 +1,5 @@
+import { resumeUrl } from "../config/site.js";
+
 const contactLinks = [
   {
     id: "email",
@@ -24,9 +26,9 @@ const contactLinks = [
     id: "resume",
     label: "Résumé",
     value: "Download my résumé",
-    href: "",
+    href: resumeUrl,
     external: false,
-    download: true,
+    download: "Mathieu-Smuk-Resume.pdf",
   },
 ];
 
