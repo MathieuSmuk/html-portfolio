@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://mathieusmuk.github.io/html-portfolio/sitemap.xml
